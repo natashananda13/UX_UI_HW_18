@@ -1,0 +1,85 @@
+
+body {
+    padding: 0;
+    margin: 0;
+}
+p {
+    font-size: 20pt;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    font-size: 14pt;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.topnav {
+    background-color:#ffcaaf;
+    overflow:hidden;
+    padding: 20px 100px 50px 100px;
+    
+}
+.topnav li {
+    float:right;
+    padding-left: 20px;
+    
+}
+.main {
+    background-color:#ffcaaf;
+    height:75vh;
+    padding: 50px 100px 50px 100px;
+    position:relative;
+}
+.main-img {
+    position:absolute;
+    padding: 50px 400px 50px 100px;
+    bottom:50px;
+    Right:0;
+}
+.down-arrow {
+    position:absolute;
+    bottom:50px;
+    Left:50%;
+    Right:50%
+}
+
+.main-text {
+    position:absolute;
+    bottom:125px;
+    padding: 0px 0px 50px 100px;
+    
+}
+#hello {
+    font-family: 'Monoton', cursive;
+    font-size:50pt;
+    padding-bottom: 20px;
+}
+.footer {
+    background-color:#ffcaaf;
+    position:relative;
+    height:200px;
+
+}
+#get-in-touch {
+    font-size: 30pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    padding-bottom: 15px;
+    
+}
+.social-icons {
+    position: absolute;
+    display:block;
+    background-color: #ffcaaf;
+    width:100;
+    text-align: center;
+    padding-left: 40%;
+    
+}
+.social {
+    padding:20px;
+}
+#copyright {
+    font-size: 15pt;
+}
