@@ -4,8 +4,32 @@ body {
     margin: 0;
 }
 p {
+    font-size: 14pt;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.3;
+}
+h1 {
+    font-size: 32pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    line-height: 1.3;
+}
+h3 {
     font-size: 20pt;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    line-height: 1.3;
+}
+button {
+    padding: 1em 2em 1em 2em;
+    margin-top: 3em;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 30px;
 }
 
 li {
@@ -40,8 +64,8 @@ li {
 .down-arrow {
     position:absolute;
     bottom:50px;
-    Left:50%;
-    Right:50%
+    left:50%;
+    right:50%
 }
 
 .main-text {
@@ -55,6 +79,81 @@ li {
     font-size:50pt;
     padding-bottom: 20px;
 }
+.bgColor {
+    background-color: #BF9071;
+}
+
+
+.workGrid {
+    display:grid;
+    align-items: center;
+    height:100vh;
+    margin:auto;
+    width:60%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "ballotBitesContent ballotBitesImage ";
+}
+.ballotBitesImage {
+    grid-area:ballotBitesImage;
+}
+.ballotBitesContent {
+    grid-area:ballotBitesContent;
+    width: 70%;
+}
+
+.bgColor2 {
+    background-color: #437B7B;
+}
+
+
+
+
+
+.workGrid3 {
+    display:grid;
+    align-items: center;
+    height:100vh;
+    margin:auto;
+    width:80%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "abrContent abrImage ";
+}
+.abrImage {
+    grid-area:abrImage;
+}
+.abrContent {
+    grid-area:abrContent;
+    width: 80%;
+    color: white;
+}
+.btnWhite {
+    color: white;
+}
+
+.workGrid3 {
+    display:grid;
+    align-items: center;
+    height:100vh;
+    margin:auto;
+    width:80%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "ftcContent ftcImage ";
+}
+.ftcImage {
+    grid-area:ftcImage;
+}
+.ftcContent {
+    grid-area:ftcContent;
+    width: 80%;
+    
+}
+
 .footer {
     background-color:#ffcaaf;
     position:relative;

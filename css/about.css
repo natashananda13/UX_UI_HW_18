@@ -6,6 +6,20 @@ p {
     
     font-family: 'Montserrat', sans-serif;
 }
+h1 {
+    font-size: 32pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+h3 {
+    font-size: 20pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
 
 li {
     font-size: 14pt;
@@ -23,6 +37,71 @@ li {
     float:right;
     padding-left: 20px;
     
+}
+.aboutMe {
+    background-color: #FFEEE3;
+    padding-bottom: 3em;;
+}
+.flexContainer2 {
+    display:flex;
+    width:60%;
+    margin:auto;
+    padding-top:5em;
+}
+#aboutMeContent {
+   display:flex;
+   flex-direction:column;
+}
+
+.childContainer2 {
+    display:flex;
+
+    
+}
+.childContainer2 h1 {
+    width: 55%;
+
+}
+#aboutMeContent p{
+    width:70%;
+    padding: 10px 0px 10px 0px;
+    line-height: 1;
+
+}
+#resumeButton {
+    background-color: #BF9071 ;
+    width:20%;
+    border:none;
+    padding:1em;
+    margin-top:2em;
+    border-radius: 30px;
+    
+}
+.mySkills {
+    background-color: #BF9071
+}
+
+.flexContainer {
+    display:flex;
+    justify-content: center;
+    align-content: stretch;
+    width:60%;
+    margin:auto;
+}
+.flexChild {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin: 2em;
+    align-items: center;
+
+}
+#skills {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    margin:auto;
+
 }
 
 }
