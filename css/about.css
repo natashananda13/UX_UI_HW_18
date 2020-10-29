@@ -144,4 +144,73 @@ li #contactPadding {
     padding-top: 1em;
 }
 
+@media only screen and (max-width: 600px) {
+    /* Universal*/
 
+    h3 {
+        font-size: 18pt;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        padding-bottom: .5em;
+        padding-top: .5em;
+        line-height: 1.3;
+    }
+    
+    /* Top Navigation*/
+
+    .topnav {
+        flex-direction: column;
+        width:100%;
+        height:12em;
+    }
+    .topnav-child {
+        width:100%;
+        justify-content: center;   
+    }
+    .logo {
+        display:flex;
+        justify-content: center;
+        padding:2em;
+    }
+
+    .aboutMe {
+        flex-direction: column;
+ 
+    }
+
+    .flexContainer2 {
+        flex-direction: column;
+        width:100%;
+        padding-top:2em;
+        
+    }
+    #aboutMeContent {
+        flex-direction:column;
+        width:100%;
+        margin: auto;
+        justify-content: center;
+     }
+
+
+
+
+
+/* Footer*/
+
+    #footerContent {
+        background-color:#ffcaaf;
+        display:flex;
+        justify-content: center;
+        width:100%;
+        height:10em;
+        align-items: center;
+        padding-bottom: 3em;
+        margin: auto;
+    }
+    #get-in-touch {
+        padding-top:2em;
+    }
+    #copyright {
+        font-size: 12pt;
+    }
+}
