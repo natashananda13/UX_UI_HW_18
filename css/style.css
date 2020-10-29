@@ -95,22 +95,10 @@ li #contactPadding {
    
 }
 
-
-
-
-
-
-
-
-
-
-    
+.main-img img {
+    height: 500px;
 }
-#hello {
-    font-family: 'Monoton', cursive;
-    font-size:50pt;
-    padding-bottom: 20px;
-}
+
 .bgColor {
     background-color: #BF9071;
 }
@@ -130,6 +118,9 @@ li #contactPadding {
 .ballotBitesImage {
     grid-area:ballotBitesImage;
 }
+.ballotBitesImage img {
+    height:700px;
+}
 .ballotBitesContent {
     grid-area:ballotBitesContent;
     width: 70%;
@@ -137,6 +128,7 @@ li #contactPadding {
 
 .bgColor2 {
     background-color: #437B7B;
+    height:100vh;
 }
 
 
@@ -153,6 +145,9 @@ li #contactPadding {
 }
 .abrImage {
     grid-area:abrImage;
+}
+.abrImage img {
+    height:600px;
 }
 .abrContent {
     grid-area:abrContent;
@@ -181,6 +176,9 @@ li #contactPadding {
 }
 .ftcImage {
     grid-area:ftcImage;
+}
+.ftcImage img {
+    height:600px;
 }
 .ftcContent {
     grid-area:ftcContent;
@@ -220,25 +218,24 @@ li #contactPadding {
      grid-area:irohImage;
      justify-self: center;
  }
+ .irohImage img{
+     height:600px;
+ }
 
  .irohButton {
     grid-area:irohButton;
     color: white;
     padding: 1em 2em 1em 2em;
     justify-self: center;
-   
-    
-    
-    
+ }   
 
-
-      
-}
  .rosettaStoneImage {
     grid-area:rosettaStoneImage;
     justify-self: center;
 }
-
+.rosettaStoneImage img{
+    height:600px;
+}
  .rsButton {
     grid-area:rsButton;
     color: white;
@@ -246,9 +243,6 @@ li #contactPadding {
     padding: 1em 2em 1em 2em;
    
  }
- 
-
-
  #footer {
     background-color: #FFEEE3;
 }
@@ -281,4 +275,220 @@ li #contactPadding {
 #copyright {
     text-align: center;
     padding-top: 1em;
+}
+@media only screen and (max-width: 600px) {
+    
+    h3 {
+        font-size: 18pt;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        padding-bottom: .5em;
+        padding-top: .5em;
+        line-height: 1.3;
+    }
+    
+    .topnav {
+        flex-direction: column;
+        width:100%;
+        height:12em;
+    }
+    .topnav-child {
+        width:100%;
+        justify-content: center;   
+    }
+    .logo {
+        display:flex;
+        justify-content: center;
+        padding:2em;
+    }
+    .main {
+        display:grid;
+        height:74vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "main-img"
+        "main-text";
+    }
+    .main-img {
+        grid-area:main-img;
+        padding: 0em 1em 1em 0em;
+        justify-self: center;
+         
+    }
+    .main-img img {
+        height: 300px;
+        
+    }
+    h2 {
+    
+        font-size:40pt;
+        padding-bottom: .5em;
+        padding-top: .5em;
+        line-height: 1;
+        
+    }
+    .main-text {
+        grid-area:main-text;
+        padding-bottom: 2em;
+}
+/* Ballot Bites Info*/
+.workGrid {
+    display:grid;
+    padding:0em 0em 1em 0em;
+    justify-self: center;
+    align-self: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "ballotBitesImage"
+    "ballotBitesContent";
+}
+.ballotBitesImage img {
+    height:400px;
+}
+.ballotBitesImage {
+    grid-area:ballotBitesImage;
+    justify-self: center;
+    align-self: center;
+}
+.ballotBitesContent {
+    grid-area:ballotBitesContent;
+    width: 100%;
+    justify-content: start;
+}
+
+/* ABR Info*/
+.workGrid2 {
+    display:grid;
+    justify-self: center;
+    align-self: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "abrImage"
+    "abrContent";
+    width:100%;
+}
+.abrImage {
+    grid-area:abrImage;
+    justify-self: center;
+    align-self: center;   
+}
+.abrImage img {
+    height:325px;
+}
+.abrContent {
+    grid-area:abrContent;
+    width:80%;
+    color: white;
+    margin:auto;
+    align-self: start;     
+}
+.btnWhite {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* FTC Info*/
+.workGrid3 {
+    display:grid;
+    justify-self: center;
+    align-self: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "ftcImage"
+    "ftcContent";
+    width:100%;
+}
+.ftcImage {
+    grid-area:ftcImage;
+    justify-self: center;
+    align-self: center; 
+}
+.ftcImage img {
+    height:325px;
+}
+.ftcContent {
+    grid-area:ftcContent;
+    width: 80%;
+    margin:auto;
+    align-self: start;
+    
+}
+#btnBlack {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    
+}
+
+.workGrid4 {
+    display:grid;
+    align-self: center;
+    justify-self: center;
+    height:auto;
+    width:100%;
+    grid-template-rows: 10% 35% 10% 35% 10%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "otherProjects"
+    "irohImage"
+    "irohButton"
+    "rosettaStoneImage"
+    "rsButton";
+}
+.otherProjects {
+    grid-area:otherProjects;
+    justify-items: center;
+    text-align: center;
+    color:white;
+}
+.irohImage {
+    grid-area:irohImage;
+    justify-self: center;
+}
+.irohImage img{
+    height:400px;
+}
+
+.irohButton {
+   grid-area:irohButton;
+   color: white;
+   padding: 1em 2em 1em 2em;
+   justify-self: center;
+}   
+
+.rosettaStoneImage {
+   grid-area:rosettaStoneImage;
+   justify-self: center;
+}
+.rosettaStoneImage img {
+    height:400px;
+ }
+
+.rsButton {
+   grid-area:rsButton;
+   color: white;
+   justify-self: center;
+   padding: 1em 2em 1em 2em;
+  
+}
+
+#footerContent {
+    background-color:#ffcaaf;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:10em;
+    align-items: center;
+    padding-bottom: 3em;
+    margin: auto;
+}
+#get-in-touch {
+    padding-top:2em;
+}
+#copyright {
+    font-size: 12pt;
+}
 }
