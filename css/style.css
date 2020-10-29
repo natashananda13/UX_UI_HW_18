@@ -16,6 +16,16 @@ h1 {
     padding-top: 1em;
     line-height: 1.3;
 }
+
+h2 {
+    
+    font-family: 'Monoton', cursive;
+    font-size:50pt;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    line-height: 1.3;
+}
+
 h3 {
     font-size: 20pt;
     font-family: 'Montserrat', sans-serif;
@@ -61,23 +71,28 @@ li #contactPadding {
 
 .main {
     display:grid;
-    height:100vh;
+    height:89vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
     "main-text main-img";
     background-color:#ffcaaf;
+    margin: auto;
 }
 .main-text {
     grid-area:main-text;
-    justify-content: flex-end;
-    width:30%;
+    align-self: center;
+    justify-self: center;
+    
+    
+   
 }
 .main-img {
     grid-area:main-img;
-    width: 70%;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-self: end;
+    align-self: end;
+    padding: 0em 5em 5em 0em;
+   
 }
 
 
@@ -203,14 +218,14 @@ li #contactPadding {
  }
  .irohImage {
      grid-area:irohImage;
+     justify-self: center;
  }
 
  .irohButton {
     grid-area:irohButton;
     color: white;
     padding: 1em 2em 1em 2em;
-    align-content: center;
-    margin: center;
+    justify-self: center;
    
     
     
@@ -221,42 +236,49 @@ li #contactPadding {
 }
  .rosettaStoneImage {
     grid-area:rosettaStoneImage;
+    justify-self: center;
 }
 
  .rsButton {
     grid-area:rsButton;
     color: white;
+    justify-self: center;
     padding: 1em 2em 1em 2em;
    
  }
  
 
 
-.footer {
-    background-color:#ffcaaf;
-    position:relative;
-    height:200px;
+ #footer {
+    background-color: #FFEEE3;
+}
 
+#footerContent {
+    background-color:#ffcaaf;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:12em;
+    align-items: center;
+    padding-bottom: 3em;
+    margin: auto;
 }
 #get-in-touch {
-    font-size: 30pt;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    padding-bottom: 15px;
-    
-}
-.social-icons {
-    position: absolute;
-    display:block;
-    background-color: #ffcaaf;
-    width:100;
     text-align: center;
-    padding-left: 40%;
-    
+}
+#social-icons {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+
 }
 .social {
-    padding:20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
 #copyright {
-    font-size: 15pt;
+    text-align: center;
+    padding-top: 1em;
 }
