@@ -5,6 +5,7 @@ body {
 p {
     
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
 }
 h1 {
     font-size: 32pt;
@@ -21,21 +22,27 @@ h3 {
     padding-top: 1em;
 }
 
+
 li {
     font-size: 14pt;
     font-family: 'Montserrat', sans-serif;
-    
-}
-
-.topnav {
-    background-color:#ffcaaf;
-    overflow:hidden;
-    padding: 20px 100px 50px 100px;
-    
-}
-.topnav li {
-    float:right;
     padding-left: 20px;
+}
+li #contactPadding {
+    padding-right:3em;
+}
+.topnav {
+    display:flex;
+    width:100%;
+    background-color:#ffcaaf;
+    height:6em;
+}
+.topnav-child {
+    display:flex;
+    width:90%;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
     
 }
 .aboutMe {
@@ -103,33 +110,38 @@ li {
     margin:auto;
 
 }
-
+#footer {
+    background-color: #FFEEE3;
 }
-.footer {
-    background-color:#ffcaaf;
-    position:relative;
-    height:200px;
 
+#footerContent {
+    background-color:#ffcaaf;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:12em;
+    align-items: center;
+    padding-bottom: 3em;
+    margin: auto;
 }
 #get-in-touch {
-    font-size: 30pt;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    padding-bottom: 15px;
-    
-}
-.social-icons {
-    position: absolute;
-    display:block;
-    background-color: #ffcaaf;
-    width:100;
     text-align: center;
-    padding-left: 40%;
-    
+}
+#social-icons {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+
 }
 .social {
-    padding:20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
 #copyright {
-    font-size: 15pt;
+    text-align: center;
+    padding-top: 1em;
 }
+
+
