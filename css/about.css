@@ -179,9 +179,10 @@ li #contactPadding {
     }
 
     .flexContainer2 {
-        flex-direction: column;
+        flex-direction: column-reverse;
         width:100%;
         padding-top:2em;
+        
         
     }
     #aboutMeContent {
@@ -190,10 +191,32 @@ li #contactPadding {
         margin: auto;
         justify-content: center;
      }
+     .childContainer2 {
+        justify-content: center;
+        padding-top: 2em;
+     }
+     .childContainer3 img {
+        display: flex;
+        margin: auto;
+    }
+    #aboutMeContent p {
+        margin: auto;
+    }
 
-
-
-
+    #aboutMeContent button {
+        margin: auto;
+        margin-top: 1em;
+    }
+    .flexContainer {
+        flex-direction: column;
+        width:100%;
+    }
+    .flexChild {
+        width:auto;
+    }
+    .flexChild p {
+        width:90%;
+    }
 
 /* Footer*/
 
@@ -202,7 +225,7 @@ li #contactPadding {
         display:flex;
         justify-content: center;
         width:100%;
-        height:10em;
+        height:12em;
         align-items: center;
         padding-bottom: 3em;
         margin: auto;

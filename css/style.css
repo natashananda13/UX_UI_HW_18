@@ -480,7 +480,7 @@ li #contactPadding {
     display:flex;
     justify-content: center;
     width:100%;
-    height:10em;
+    height:12em;
     align-items: center;
     padding-bottom: 3em;
     margin: auto;
@@ -489,6 +489,6 @@ li #contactPadding {
     padding-top:2em;
 }
 #copyright {
-    font-size: 12pt;
+    font-size: 12pt;;
 }
 }
